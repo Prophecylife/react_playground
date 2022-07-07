@@ -1,16 +1,14 @@
+import { Globalstyle } from './GlobalStyle';
+import {AppBar} from './AppBar/AppBar'
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Globalstyle />
+      <AppBar user={{
+        username: 'Jack', isOnline: true, points: {
+        total: 1000, required: 300,
+      } }} />
     </div>
   );
 };
